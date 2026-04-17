@@ -100,7 +100,7 @@
     <div class="container">
 
         <div class="card">
-            <img src="images/fikri.jpg">
+            <img src="images/fikri.jpeg">
             <div class="card-body">
                 <h3>Ahmad Fikri Fauzan</h3>
                 <p>No Absen: 01</p>
@@ -109,7 +109,7 @@
         </div>
 
         <div class="card">
-            <img src="images/roy.jpg">
+            <img src="images/roy.jpeg">
             <div class="card-body">
                 <h3>Ahmad Zainur Royyan</h3>
                 <p>No Absen: 02</p>
@@ -118,7 +118,7 @@
         </div>
 
         <div class="card">
-            <img src="images/natanz.jpg">
+            <img src="images/natanz.jpeg">
             <div class="card-body">
                 <h3>Natanz Meshaal Saptoaji</h3>
                 <p>No Absen: 03</p>
