@@ -1,28 +1,4 @@
-<?php
-$kelompok = "Kelompok 2";
-
-$anggota = [
-    [
-        "nama" => "Ahmad Fikri Fauzan",
-        "absen" => "01",
-        "kelas" => "XI RPL",
-        "foto" => "images/fikri.jpg"
-    ],
-    [
-        "nama" => "Ahmad Zainur Royyan",
-        "absen" => "02",
-        "kelas" => "XI RPL",
-        "foto" => "images/roy.jpg"
-    ],
-    [
-        "nama" => "Natanz Meshaal Saptoaji",
-        "absen" => "03",
-        "kelas" => "XI RPL",
-        "foto" => "images/natanz.jpg"
-    ]
-];
-?>
-
+```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -36,10 +12,24 @@ $anggota = [
             color: #e5e7eb;
         }
 
-        h1 {
+        .welcome {
             text-align: center;
-            margin-top: 40px;
-            font-size: 2.5rem;
+            padding: 80px 20px 40px;
+        }
+
+        .welcome h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+
+        .welcome p {
+            color: #94a3b8;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 2rem;
             letter-spacing: 2px;
         }
 
@@ -97,24 +87,51 @@ $anggota = [
 </head>
 <body>
 
-    <h1>👨‍💻 <?= $kelompok ?></h1>
+    <!-- 🔹 Selamat Datang -->
+    <div class="welcome">
+        <h1>Selamat Datang 👋</h1>
+        <p>Website kamu sudah berjalan!</p>
+    </div>
 
+    <!-- 🔹 Judul -->
+    <h2>👨‍💻 Kelompok 2</h2>
+
+    <!-- 🔹 Card Anggota -->
     <div class="container">
-        <?php foreach ($anggota as $a) : ?>
+
         <div class="card">
-            <img src="<?= $a['foto']; ?>" alt="<?= $a['nama']; ?>">
+            <img src="images/fikri.jpg">
             <div class="card-body">
-                <h3><?= $a['nama']; ?></h3>
-                <p>No Absen: <?= $a['absen']; ?></p>
-                <p>Kelas: <?= $a['kelas']; ?></p>
+                <h3>Ahmad Fikri Fauzan</h3>
+                <p>No Absen: 01</p>
+                <p>Kelas: XI RPL</p>
             </div>
         </div>
-        <?php endforeach; ?>
+
+        <div class="card">
+            <img src="images/roy.jpg">
+            <div class="card-body">
+                <h3>Ahmad Zainur Royyan</h3>
+                <p>No Absen: 02</p>
+                <p>Kelas: XI RPL</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/natanz.jpg">
+            <div class="card-body">
+                <h3>Natanz Meshaal Saptoaji</h3>
+                <p>No Absen: 03</p>
+                <p>Kelas: XI RPL</p>
+            </div>
+        </div>
+
     </div>
 
     <div class="footer">
-        © 2026 SMK Telkom Malang | Web Server Dinamis PHP
+        © 2026 SMK Telkom Malang | HTML Version
     </div>
 
 </body>
 </html>
+```
